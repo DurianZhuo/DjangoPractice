@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <form action="/stu/login/" method="post">
+        {% csrf_token %}
+        <p><label for="un">用户名：<input type="text" name="sname" id="un"></label></p>
+        <p><label for="up">密&nbsp;码：<input type="password" name="spwd" id="up"></label></p>
+        <p><input type="submit" value="登录"></p>
+    </form>
+
+</body>
+</html>

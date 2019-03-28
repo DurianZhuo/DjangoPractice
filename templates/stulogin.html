@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stulogin</title>
+</head>
+<body>
+    <form action="/student/" method="post">
+        {% csrf_token %}
+        <p>姓名：<input type="text" name="sname"></p>
+        <p>所属班级：
+            <select name="clazz" >
+                <option value="Java1">Java</option>
+                <option value="Python1">Python</option>
+                <option value="Html51">Html5</option>
+            </select></p>
+        <p>课程名称：<input type="checkbox" name="coursename" value="Java2">Java&emsp;
+                    <input type="checkbox" name="coursename" value="Python2">Python&emsp;
+                    <input type="checkbox" name="coursename" value="H52">Html5&emsp;
+        </p>
+        <p><input type="submit" value="提交"></p>
+    </form>
+</body>
+</html>

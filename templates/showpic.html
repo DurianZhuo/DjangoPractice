@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" width="500" cellspacing="0">
+    <tr>
+        <th>姓名</th>
+        <th>头像</th>
+    </tr>
+    {% for info in stuinfo %}
+    <tr>
+        <td>{{ info.sname }}</td>
+        <td><img width="100" src="{{ info.pic.url }}" alt="{{ info.pic.url }}"></td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>
